@@ -1,0 +1,12 @@
+.container{
+    background: bisque;
+    display: flexbox;
+    margin: 20px;
+
+}
+#form{
+    font: 1em sans-serif;
+    background-color: gold;
+    text-decoration: dashed;
+    text-shadow: 12px 1px 1px rgba(255,255,0);
+}

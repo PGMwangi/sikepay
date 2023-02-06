@@ -1,0 +1,70 @@
+body {
+    background-color: grey;
+
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+input {
+    height: 35px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.first-name {
+    margin:auto 50% auto 50%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.last-name {
+    margin:auto 50% auto 50%;
+    
+    margin-bottom: 10px;
+}
+
+.surname {
+    margin:auto 50% auto 50%;
+    margin-bottom: 10px;
+}
+
+.email {
+    margin:auto 50% auto 50%;
+    margin-bottom: 10px;
+}
+
+.phone-number {
+    margin:auto 50% auto 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    margin:auto 50% auto 50%;
+    margin-bottom: 10px;
+}
+
+.password {
+    margin:auto 50% auto 50%;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    margin:auto 42% auto 58%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin:auto 50% auto 50%;
+}

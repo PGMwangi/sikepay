@@ -1,0 +1,125 @@
+.trans{
+  
+    display: inline;
+    margin-right: 5%;
+    margin-left: 10%;
+    
+   
+   
+ }
+ #trans1{
+  
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+   
+   
+ }
+ 
+ #trans2{
+  
+    display: inline;
+    margin-right: 1%;
+    margin-left: 1%;
+    
+   
+   
+ }
+ #trans3{
+  
+    display: inline;
+    margin-right: 1%;
+    margin-left: 1%;
+    
+   
+   
+ }
+ #trans4{
+  
+    display: inline;
+    margin-right: 1%;
+    margin-left: 1%;
+    
+   
+   
+ }
+ #outer{
+    margin-left: 10%;
+    margin-right: 60%;
+    width:100%;
+
+}
+.inner
+{
+    display: inline-block;
+}
+.save{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.publish{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.back{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+ 
+#trans11{
+  
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+   
+   
+ }
+ #trans12{
+  
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+   
+   
+ }
+ #trans13{
+  
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+   
+   
+ }
+ .transaction{
+  
+    
+    margin-right: 30%;
+    margin-left: 25%;
+    
+   
+   
+ }
+ .available{
+  
+    
+    margin-right: 30%;
+    margin-left: 25%;
+    
+   
+   
+ }
+ .transaction-page{
+  
+    background-color: lightskyblue;
+    margin-left: 10%;
+   
+   
+ }
+ 

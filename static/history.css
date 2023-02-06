@@ -1,0 +1,11 @@
+#history{
+    background-color: azure;
+}
+#button1,#button2,#button3{
+    width: 200px;
+    height: 40px;
+    border: none;
+    display: inline;
+    padding: 14px ;
+    
+}

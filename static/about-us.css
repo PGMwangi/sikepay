@@ -1,0 +1,19 @@
+#about-us{
+    width: 235;
+    height: 200;
+    text-align: center;
+    background-color: #ccc;
+    
+
+}
+#logo{
+    height:30px;
+    width: 30px;
+    float: left;
+}
+#company-photo{
+    height: 275px;
+    width: 235px;
+    float: right top;
+    
+}

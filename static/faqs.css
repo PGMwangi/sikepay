@@ -1,0 +1,7 @@
+.answer {
+    display: none; /* hide the answer by default */
+}
+
+.question:hover {
+    cursor: pointer;
+}

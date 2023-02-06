@@ -1,0 +1,38 @@
+#side-menu {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    top: 60px;
+
+   
+  }
+  
+  #side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icon {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  
+  .icon i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .icon span {
+    display: none;
+  }
+  
+  .icon:hover span {
+    display: block;
+  }
+  

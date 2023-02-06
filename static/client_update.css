@@ -1,0 +1,13 @@
+.container{
+    background: rgb(183, 164, 200);
+    text-decoration: dashed;
+
+}
+input[type="submit"]{
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0 none;
+    -webkit-border-radius: 5px;
+
+}

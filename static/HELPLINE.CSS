@@ -1,0 +1,98 @@
+.HELPLINE{
+    background-color:  lightskyblue;
+    
+}
+.helpline{
+    background-color: lightskyblue;
+    
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.sikepay{
+    margin-top: 5%;
+   
+    font-size: larger;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-style: inherit;
+}
+.customer-care{
+    margin-top: 30%;
+    margin-bottom: 0.5%;
+    font-weight: bolder;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+}
+
+.phone-no{
+    
+    font-weight: bolder;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+}
+.gmail{
+    
+    font-weight: bolder;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.facebook{
+    
+    font-weight: bolder;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.twitter{
+    
+    font-weight: bolder;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.ig{
+    
+    font-weight: bolder;
+   
+    font-size: medium;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-style: inherit;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.image{
+    
+   
+
+    
+    margin-left: 20%;
+    background-color: blue;
+    margin-right: 40%;
+    height: 100px;
+    width: 200px;
+  
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

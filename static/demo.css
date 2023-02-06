@@ -1,0 +1,107 @@
+
+#head1{
+    color: lightgreen;
+    font-family: scursive;
+    
+    margin-bottom: 5px;
+    margin-left: 34%;
+    margin-right: 30%;
+}
+
+.first-heading {
+   
+    background-color: black;
+    
+}
+.demo{
+    background-color: lightblue;
+}
+.first-paragraph{
+    
+    font-style: oblique;
+    font-size: 1cm;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+}
+.second-paragraph{
+    font-weight: 900;
+    font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 35%;
+    margin-right: 30%;
+}
+.third-paragraph{
+    
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.fourth-paragraph{
+    margin-top: 0.8%;
+    font-weight: bolder;
+    font-size: 90%;
+    margin-left: 35%;
+    margin-right: 30%;
+}
+.second-heading{
+    text-underline-position: below;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-right: 30%;
+}
+.password{
+    
+    
+    
+    margin-left: 30%;
+    margin-right: 40%;
+}
+.helpline-email{
+    
+    
+    
+    margin-left: 30%;
+    margin-right: 40%;
+}
+.submit{
+    background-color: blue;
+    height: 10%;
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 40%;
+}
+.message-us{
+    font-style: unset;
+    font-size: xx-large;
+    margin-left: 30%;
+    margin-right: 40%;
+}
+
+#message-us{
+    
+    width: 150mm;
+    height: 50mm; 
+    
+}
+.text-part{
+    background-color: grey ;
+    
+   
+}
+.kakas{
+    background-color: grey ;
+    
+   
+}
+
+    
+    
+    
+    
+  
+
+

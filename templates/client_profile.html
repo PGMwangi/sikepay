@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'client_profile.css' %}">
+    <title>Client Profile</title>
+</head>
+<body>
+    <div class="container">
+        <p>Personal Information</p>
+        <form action="">
+            <label for="fname">Full name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email"><br><br>
+            <label for="phone number">Phone Number:</label>
+            <input type="text" id="phone number"><br><br>
+            <label for="img">Profile Picture</label>
+            <input type="file" id="profilePicture" name="filename">
+            <div class="container">
+                <form id="form">
+                  <h3>TWO-FACTOR AUTHENTICATION</h1>
+                  <div class="form__group form__pincode">
+                    <label>Enter 6-digit code from your authenticator application</label>
+                    <input type="tel" name="pincode-1" maxlength="1" pattern="[\d]*" tabindex="1" placeholder="·" autocomplete="off">
+                    <input type="tel" name="pincode-2" maxlength="1" pattern="[\d]*" tabindex="2" placeholder="·" autocomplete="off">
+                    <input type="tel" name="pincode-3" maxlength="1" pattern="[\d]*" tabindex="3" placeholder="·" autocomplete="off">
+                    <input type="tel" name="pincode-4" maxlength="1" pattern="[\d]*" tabindex="4" placeholder="·" autocomplete="off">
+                    <input type="tel" name="pincode-5" maxlength="1" pattern="[\d]*" tabindex="5" placeholder="·" autocomplete="off">
+                    <input type="tel" name="pincode-6" maxlength="1" pattern="[\d]*" tabindex="6" placeholder="·" autocomplete="off">
+                  </div>
+                  <div class="form__buttons">
+                    <a href="#" class="button button--primary" disabled>Continue</a>
+                  </div>
+                </form>
+              </div>
+              <label for="password">Change Password:</label>
+              <input type="text" id="myPassword" name="password"><br><br>
+              <label for="password">Old password:</label>
+              <input type="text" id="oldPassword" name="password">
+              <input type="submit">
+        </form>      
+
+
+    </div>
+    
+</body>
+</html>

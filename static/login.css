@@ -1,0 +1,68 @@
+#login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#login-form #login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#login-form .saved-emails {
+    margin-top: 20px;
+}
+
+#login-form .saved-emails a {
+    color: #666;
+}
+
+#login-form .saved-emails a:hover {
+    text-decoration: underline;
+}
+
+#login-form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login-form .signup-link a {
+    color: #666;
+}
+
+#login-form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+#remember-me {
+    margin-right: 10px;
+}
+
+#remember-me + label {
+    margin: 0;
+}
