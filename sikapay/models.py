@@ -30,7 +30,7 @@ class table(models.Model):
         return self.Email
 
     def __str__(self):
-        return self.Phonenumber
+        return self.Phone_number
 
     def __str__(self):
         return self.Age
@@ -45,7 +45,7 @@ class table(models.Model):
         return self.City
 
     def __str__(self):
-        return self.County
+        return self.country
 
     def __str__(self):
         return self.address1
@@ -55,8 +55,18 @@ class table(models.Model):
 
     def __str__(self):
         return self.PostalCode
-
+     
     def __str__(self):
         return self.Password
     
     
+# class table2(models.Model):
+#     Email = models.EmailField(max_length=100)
+#     Password = models.CharField(max_length=500)
+
+
+#     def __str__(self):
+#         return self.Email
+
+#     def __str__(self):
+#         return self.password    

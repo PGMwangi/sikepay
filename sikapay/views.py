@@ -1,11 +1,49 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import table
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,auth
 from django.contrib import messages
+from django.contrib.auth import authenticate,login
+from rest_framework import viewsets
+from .serializers import TableSerializers
+
+class TableViewSet(viewsets.ModelViewSet):
+    queryset = table.objects.all()
+    serializer_class=TableSerializers
 
 def login(request):
-    return render(request, 'login.html')
+    if request.method == 'POST':
+        Email = request.POST.get('email')                   
+        Password = request.POST.get('password')
+
+        user = auth,authenticate(request,Email=Email, Password=Password)
+
+        if user is not None:
+            messages.success(request, f' wecome {Email} !!')
+            return redirect('about-us.html')
+        else:
+            messages.info(request,'invalid credentials')
+            return redirect('signup.html')
+    else:
+        return render(request, 'login.html')
+
+
+# def login(request):
+#     if request.method == 'POST':
+
+#         #AuthenticationForm_can_also_be_used__
+
+#         Email = request.POST.get('email')
+#         Password = request.POST.get('password')
+#         user = authenticate(request,Email=Email, Password=Password)
+#         if user is not None:
+#             messages.success(request, f' wecome {Email} !!')
+#             return redirect('about-us.html')
+#         else:
+#             messages.info(request, f'account does not exit plz sign in')
+#     return render(request, 'login.html')
+
+    
 
 # def sighup(request):
 #     context={}
@@ -54,6 +92,11 @@ def signup(request):
             return redirect('signup.html')
      else:
         return render(request, 'signup.html')
+
+def logout(request):
+    authenticate.logout(request)
+    return redirect('about-us.html')
+
 def dashboard(request):
     return render(request, 'dashboard.html')
 
