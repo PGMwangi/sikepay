@@ -1,5 +1,9 @@
 {% load static %}
 
+{% for message in messages %}
+<h3>{{messages}}</h3>
+{% endfor %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +16,16 @@
 <body>
     <div id="login-form">
         <h1>Login</h1>
-        <form action="login" method="post">
-            <label for="username-email">Username or Email</label>
-            <input type="text" id="username-email" name="username-email">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
             <div class="form-group">
                 <input type="checkbox" id="remember-me" name="remember-me"> <label for="remember-me">Remember me</label>
             </div>
-            <button type="submit" id="login-button">Login</button>
+            <button type="submit" value="login">Log In</button>
             <div class="saved-emails">
                 <p>Or login with one of your saved emails:</p>
                 <ul id="saved-emails-list">

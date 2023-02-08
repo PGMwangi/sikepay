@@ -1,7 +1,15 @@
-from django.urls import path
+from django.urls import path,include
 from . import views
+from rest_framework import routers
+from .views import *
+
+router= routers.DefaultRouter()
+router.register(r'sikapay',TableViewSet)
+
 
 urlpatterns=[
+    path('',include(router.urls)),
+    path('api-auth/', include('rest_framework.urls')),
     path('', views.login, name='login'),
     path('signup.html', views.signup, name='signup'),
     path('dashboard.html', views.dashboard, name='dashboard'),
