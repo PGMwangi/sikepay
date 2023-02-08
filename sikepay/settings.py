@@ -40,8 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sikapay',
+<<<<<<< HEAD
     'rest_framework',
     'corsheaders',
+=======
+    'crispy_forms',
+>>>>>>> 8abf094 (test2)
 ]
 
 MIDDLEWARE = [
@@ -86,7 +90,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '',
         'HOST':'127.0.0.1',
-        'PORT':'3306',
+        'PORT': 3306,
         'OPTIONS': {
                 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             },
@@ -130,6 +134,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

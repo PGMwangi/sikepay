@@ -22,3 +22,11 @@ urlpatterns = [
     path('', include('sikapay.urls')),
     path("sikapay", include("django.contrib.auth.urls"))
 ]
+
+
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, documents_root=settings.MEDIA_ROOT)

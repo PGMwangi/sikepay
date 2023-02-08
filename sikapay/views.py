@@ -1,7 +1,12 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+<<<<<<< HEAD
 from .models import table
 from django.contrib.auth.models import User,auth
+=======
+from .models import table, client_update_profile
+from django.contrib.auth.models import User
+>>>>>>> 8abf094 (test2)
 from django.contrib import messages
 from django.contrib.auth import authenticate,login
 from rest_framework import viewsets
@@ -113,7 +118,9 @@ def client_profile(request):
     return render(request, 'client_profile.html')
 
 def client_update_profile(request):
+    
     return render(request, 'client_update_profile.html')
+
 
 def client_update(request):
     return render(request, 'client_update.html')
