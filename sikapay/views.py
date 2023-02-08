@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import table
+from .models import table, client_update_profile
 from django.contrib.auth.models import User
 from django.contrib import messages
 
@@ -70,7 +70,9 @@ def client_profile(request):
     return render(request, 'client_profile.html')
 
 def client_update_profile(request):
+    
     return render(request, 'client_update_profile.html')
+
 
 def client_update(request):
     return render(request, 'client_update.html')

@@ -1,50 +1,62 @@
-{% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'client_update.css' %}">
-    <title>Client Update Profile</title>
-</head>
-<body>
-    <div class="container">
-        <div id="form">
-            <form action="">
-                <label for="image">Update Profile Image</label>
-                <input type="file" id="profilePicture" name="filename"> <br><br>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" name="email"><br><br>
-                <label for="phone number">Phone Number:</label>
-                <input type="text" id="phone number"><br><br>
-                <label for="age">Age:</label>
-                <input type="text" id="age"><br><br>
-                <label for="city">City:</label>
-                <input type="text" id="city"><br><br>
-                <label for="town">Town:</label>
-                <input type="text" id="town"><br><br>
-                <label for="country">Country:</label>
-                <input type="text" id="country"><br><br>
-                <label for="nationality">Nationality:</label>
-                <input type="text" id="nationality"><br><br>
-                <label for="address ">Address 1:</label>
-                <input type="text" id="address"><br><br>
-                <label for="address ">Address 2:</label>
-                <input type="text" id="address"><br><br>
-                <label for="zip code ">Zip code:</label>
-                <input type="text" id="zip code"><br><br>
-                
-                <input type="submit" name="submit" value="Update Details">
-                <script src="./client_update.js"></script>
-            </form>            
-
-        </div>
+{% extends "base.html" %}
+{% block title %}Profile Page{% endblock title %}
+{% block content %}
+    <div class="row my-3 p-3">
+        <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} " style="cursor: pointer;"/>
     </div>
-</body>
-</html>
+    {% if user_form.errors %}
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <div id="form_errors">
+                {% for key, value in user_form.errors.items %}
+                    <strong>{{ value }}</strong>
+                {% endfor %}
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endif %}
+    <div class="form-content">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label class="small mb-1">Username:<input type="text"/></label>
+                            {{ user_form.username }}<br>
+                        <label class="small mb-1">Email:<input type="email"></label>
+                            {{ user_form.email }}<br>
+                        <label class="small mb-1">Phone_number:<input type="number"></label>
+                            {{ user_form.Phone_number }}<br>
+                        <label class="small mb-1">Age:<input type="time"></label>
+                            {{ user_form.Age }}<br>
+                        <label class="small mb-1">City:<input type="text"></label>
+                            {{ user_form.City }}<br>
+                        <label class="small mb-1">Town:</label>
+                            {{ user_form.Town }}<br>
+                        <label class="small mb-1">Country:</label>
+                            {{ user_form.Country }}<br>
+                        <label class="small mb-1">Nationality:</label>
+                            {{ user_form.Nationality }}<br>
+                            <label class="small mb-1">Address1:</label>
+                            {{ user_form.Address1 }}<br>
+                        <label class="small mb-1">Address2:</label>
+                            {{ user_form.Address2 }}<br>
+                        <label class="small mb-1">zip_code:</label>
+                            {{ user_form.Zip_code }}<br>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">Change Password</a>
+                        <hr>
+                        <label class="small mb-1">Change Avatar:</label>
+                        {{ profile_form.avatar }}
+                    </div>
+                    <label class="small mb-1">Bio:</label> {{ profile_form.bio }}
+                </div>
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-dark btn-lg">Save Changes</button>
+            <button type="reset" class="btn btn-dark btn-lg">Reset</button>
+        </form>
+    </div>
+{% endblock content %}
