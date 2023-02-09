@@ -6,10 +6,27 @@ from django.contrib import messages
 from django.contrib.auth import authenticate,login
 from rest_framework import viewsets
 from .serializers import TableSerializers
+from django.core.mail import send_mail
+import math,random
 
 class TableViewSet(viewsets.ModelViewSet):
     queryset = table.objects.all()
     serializer_class=TableSerializers
+
+def generateOTP():
+    digits= "0123456789"
+    OTP=""
+    for i in range(6):
+        OTP += digits[math.floor(random.random()*10)]
+    return OTP
+
+def send_otp(request):
+    Email=request.Get.get("Email")
+    print(Email)
+    o=generateOTP()
+    htmlgen = '<p>Your OTP is <strong>0</strong></p>'
+    send_mail('OTP request',o,'<your gmail id>',[Email],fail_silently=False,html_message=htmlgen)
+    return HttpResponse
 
 def login(request):
     if request.method == 'POST':

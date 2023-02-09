@@ -2,12 +2,14 @@ from django.urls import path,include
 from . import views
 from rest_framework import routers
 from .views import *
+from django.contrib import admin
 
 router= routers.DefaultRouter()
 router.register(r'sikapay',TableViewSet)
 
 
 urlpatterns=[
+    path("send_otp",views.send_otp,name="send otp"),
     path('',include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),
     path('', views.login, name='login'),
