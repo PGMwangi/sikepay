@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class table(models.Model):
@@ -59,6 +60,31 @@ class table(models.Model):
     def __str__(self):
         return self.Password
     
+<<<<<<< HEAD
+class client_update_profile(models.Model):
+    
+    first_name = models.CharField(max_length = 20)
+    second_name = models.CharField(max_length = 20)
+    email = models.EmailField(max_length = 40)
+    Phone_number = models.CharField(max_length = 20)
+    age = models.CharField(max_length = 20)
+    city = models.CharField(max_length = 40)
+    town = models.CharField(max_length = 20)
+    country = models.CharField(max_length = 20)
+    nationality = models.CharField(max_length = 40)
+    address1 = models.CharField(max_length = 20)
+    address2 = models.CharField(max_length = 20)
+    zip_code = models.CharField(max_length = 40)
+    
+
+    
+
+    def __str__(self):
+        return self.''
+  
+       
+    
+=======
     
 # class table2(models.Model):
 #     Email = models.EmailField(max_length=100)
@@ -70,3 +96,4 @@ class table(models.Model):
 
 #     def __str__(self):
 #         return self.password    
+>>>>>>> origin
