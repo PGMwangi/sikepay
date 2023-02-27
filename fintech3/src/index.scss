@@ -1,0 +1,24 @@
+$color-pink: #9cb4a1;
+$color-white: #ffffff;
+$color-blue: #3498db;
+$color-dark: #2c3e50;
+
+$background: linear-gradient(to right, $color-pink, $color-white, $color-blue, $color-dark);
+
+body {
+  background: $background;
+  background-size: 800% 800%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

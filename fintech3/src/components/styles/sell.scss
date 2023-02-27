@@ -1,0 +1,65 @@
+.sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  
+    .sell__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .sell__form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1rem;
+  
+      .sell__label {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+      }
+  
+      .sell__input-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+  
+        .sell__input {
+          border: none;
+          border-bottom: 1px solid gray;
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+          padding: 0.5rem;
+          width: 10rem;
+          text-align: right;
+  
+          &:focus {
+            outline: none;
+            border-color: blue;
+          }
+        }
+  
+        .sell__input-symbol {
+          font-size: 1.2rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  
+    .sell__button {
+      background-color: red;
+      border: none;
+      border-radius: 0.5rem;
+      color: white;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+  
+      &:hover {
+        background-color: darkred;
+      }
+    }
+}
+  

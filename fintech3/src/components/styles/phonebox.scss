@@ -1,0 +1,50 @@
+.phone {
+    width: 300px;
+    height: 600px;
+    background-color: #f3adad;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px #b13939;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+.screen {
+    width: 50%;
+    height: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom:100% ;
+}
+  
+.screen p {
+    animation: slide-in 1s ease-out;
+    -webkit-animation: slide-in 1s ease-out;
+}
+  
+@-webkit-keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  

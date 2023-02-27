@@ -1,0 +1,36 @@
+.dashboard {
+    max-width: 80%;
+    margin: 0 auto;
+}
+  
+@media only screen and (max-width: 768px) {
+    .dashboard table {
+      display: block;
+      width: 100%;
+    }
+  
+    .dashboard table thead {
+      display: none;
+    }
+  
+    .dashboard table tbody {
+      display: block;
+      width: 100%;
+    }
+  
+    .dashboard table td {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dashboard table td:before {
+      content: attr(data-th);
+      font-weight: bold;
+      display: inline-block;
+      width: 50%;
+      margin-right: 5%;
+      text-align: left;
+    }
+}
+  
