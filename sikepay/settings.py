@@ -40,12 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sikapay',
-<<<<<<< HEAD
-    'crispy_forms',
-=======
     'rest_framework',
     'corsheaders',
->>>>>>> origin
 ]
 
 MIDDLEWARE = [
